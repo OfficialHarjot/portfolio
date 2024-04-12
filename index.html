@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal site</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/90196bfd04.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        @font-face {
+    font-family: 'Jennifer Lynne';
+    src: url('path/to/jennifer-lynne.woff2') format('woff2'),
+         url('path/to/jennifer-lynne.woff') format('woff');
+    font-weight: bold;
+    font-style:normal;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  display: none; /* Initially hidden */
+  justify-content: center;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+
+  &__film {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    display: flex;
+  }
+
+  &__film-img {
+    animation: rotate 1.5s linear infinite;
+  }
+}
+
+
+/* hover */
+.logo {
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+  .logo:hover {
+    transform: scale(1.1); /* Scale logo to 110% its size on hover */
+  }
+
+</style>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- loading -->
+    <div class="loader">
+        <div class="loader__container">
+            <div class="loader__film">
+                <img class="loader__film-img" src="https://www.dropbox.com/s/o4p5i3nfw92rhfz/film.png?raw=1" alt="" />
+                <img class="loader__film-img" src="https://www.dropbox.com/s/o4p5i3nfw92rhfz/film.png?raw=1" alt="" />
+            </div>
+            <img class="loader__camera" src="https://www.dropbox.com/s/348z6yvtt9hbos2/camera.png?raw=1" alt="" />
+        </div>
+    </div>
+    
+    <!-- loading -->
+
+    <div id="header">
+       
+    <div class="container">
+        <nav>
+            
+            <a href="#">
+                <img src="images/logo.png" class="logo" width="250px" alt="logo">
+              </a>
+
+            <ul id="sidemenu"  >
+                <li><a href="#header">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                
+                
+                
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark"  onclick="closemenu()" ></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav> 
+    </div>   
+    <div class="header-text">
+        <!-- <p>web designer</p> -->
+        <!-- <h1>Hi! I'm <span>Harjot</span> singh <br> </h1> -->
+                   <!-- <strong> <span style="font-family: 'Jennifer Lynne', sans-serif;font-size: 50px;" class="wixui-rich-text__text">Harjot Singh</span></strong> -->
+
+    </div>
+    <button id="up">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+    
+    
+    </div>
+ 
+<!---------- portfolio   ----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project_1.jpg" alt="project 1" />
+                <div class="layer">
+                    <h3>Prestigious Souls</h3>
+                    <p>
+                        Introducing the 3D Luxury Playing Card Box: Ebony lacquer exterior, 24-karat gold leaf emblem, plush burgundy velvet interior with precision compartments. 
+                        Secure magnetic closure, symbolizing refinement and taste.</p>
+                        <a href="Assets/gos.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/project_2.jpg" alt="project 2" />
+                <div class="layer">
+                    <h3>Katana </h3>
+                    <p>Katana sword with a detailed red cord-wrapped hilt, a gold floral-patterned tsuba, and a reflective, polished blade,
+                         showcasing advanced texturing, realistic lighting, and high-quality rendering techniques...</p>
+                        <a href="Assets/katana.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project_3.jpg" height="400px" alt="project 3" />
+                <div class="layer">
+                    <h3>Environment</h3>
+                    <p>The "Environment" project image portrays a hyperrealistic 3D-rendered stone surface with textured moss and lichen details, set against a soft-focus backdrop of lush greenery,
+                         exemplifying advanced environmental modeling and texturing capabilitie</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="Assets/gallery.html" class="btn">see more</a>
+    </div>
+</div>
+
+   <!--service -->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-bugs"></i>
+                <h2>Creature design</h2>
+                <p> As a Creature Design specialist in 3D artistry, I provide comprehensive services
+                     to transform your imaginative concepts into reality. My expertise spans from initial concept development
+                     through detailed modeling and animation, ensuring an immersive experience in captivating, uniquely crafted worlds.</p>
+                    <a href="https://conestogagigs.ca/harjot-singh-productions/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-web-awesome"></i>
+                <h2>Asset design</h2>
+                <p>
+                    Get your 3D assets for multimedia projects, specializing in creating detailed models,
+                     textures, and animations. With a blend of artistic skills and technical expertise, 
+                       Also offers craft visually compelling and functional elements designed to enhance video games, films, and other digital experiences. 
+                     If you're looking to elevate your project with high-quality 3D assets, let's talk!
+
+
+
+
+
+
+                </p>
+                    <a href="https://conestogagigs.ca/harjot-singh-productions/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-envira"></i>
+                <h2  >Environment design</h2>
+                <p>
+                    Specializing in environment design, this service offers immersive and visually stunning settings for video games, films, and virtual reality experiences.
+                     With expertise in spatial composition and thematic detailing, compelling backdrops are created to enhance storytelling and gameplay. 
+                     Ideal for projects seeking to transform their visual appeal with captivating environments.</p>
+                    <a href="https://conestogagigs.ca/harjot-singh-productions/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about --> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.webp" alt="Harjot singh">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" style="color: aquamarine;" >About me</h1>
+                <p  style="font-size: 50px;">Hello! I am Harjot Singh.
+
+                    As a 3D artist with a B.Sc. degree, I fuse technical prowess with creative passion. <br> I excel in presenting ideas with depth and emotion, driven by meticulous attention to detail. <br> My planning skills ensure not just meeting, but exceeding expectations. A perpetual learner, <br> I adapt to industry shifts and embrace feedback for growth.
+                     I'm eager to infuse your team with my personal touch, <br> bringing enthusiasm and precision to every project.​</p>
+                     <!-- <div class="tab-titles">
+                        <p class="tab-links active-link"   onclick="opentab('skills')" >Skills</p> -->
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p> -->
+                     </div>
+
+                    
+                     <!-- <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Software skills</span>
+                                <ul>
+                                    <br/>Autodesk Maya
+                                    <br> 
+                                    <br/>Adobe Photoshop
+                                    <br>
+                                    <br/>Autodesk Maya
+                                    <br>
+                                    <br/>Adobe Premiere Pro
+                                    <br>
+                                    <br/>Adobe Substance Painter
+                                    <br>
+                                    <br/>Adobe Substance Designer
+                                    <br>
+                                    <br/>Foundry Mari
+                                    <br>
+                                    <br/>Foundry Nuke
+                                    <br>
+                                    <br/>Sidefx Houdini
+                                    <br>
+                                    <br/>DaVinci Resolve
+                                    <br>
+                                    <br/>Maxon Zbrush
+                                    <br>
+                                    <br/>Shot Grid
+                                </ul>
+                                <br/>
+                            </li>
+                            <li><span>Soft Skills</span>
+                                <ul style="margin-bottom: 10px;">
+                                    <li style="margin-bottom: 5px;">Presentation Skills</li>
+                                    <li style="margin-bottom: 5px;">Scrupulous</li>
+                                    <li style="margin-bottom: 5px;">Effective Planning</li>
+                                    <li style="margin-bottom: 5px;">Auto Didact</li>
+                                    <li style="margin-bottom: 5px;">Adaptability</li>
+                                    <li style="margin-bottom: 5px;">Polymath</li>
+                                    <li style="margin-bottom: 5px;">Opennessto Feedback</li>
+                                </ul>
+                                
+                            </li>
+                        </ul>
+                    </div> -->
+                    
+                     <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li style="margin-bottom: 5px; "><span>2023-2023 </span><br>INTERNSHIP AS CG GENERALIST AND 3D ANIMATOR</li>
+                            <p style="font-size: small;   font-family:Georgia, 'Times New Roman', Times, serif" > At Conestoga Gigs Lab/ Kitchener, Ontario</p>
+
+
+                            <li><span>2020-2023</span><br>learning </li>
+                            
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>diploma</span><br>computer programming from georgian college</li>
+                            <li><span>senior secondary</span><br>w</li>
+                            <li><span>web</span><br>developing</li>
+                        </ul>
+                     </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------contact--------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>officialharjotsingh@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+1(647)-627-5793</p>
+                <div class="social-icons">
+                  
+                    <a href="https://www.instagram.com/harjotsinghproductions/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/officialharjotsingh/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.artstation.com/officialharjotsingh"><i class="fa-brands fa-artstation"></i></a>
+                </div>
+                <a href="images/harjotresume.pdf" download class="btn btn2"> Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" action="https://formspree.io/f/mwkgwody" method="POST">
+                    <input type="text" name="Name" placeholder="YourName" required/>
+                    <input type="email" name="Email" placeholder="YourEmail@mail.com" required/>
+                    <textarea name="Message" rows="6" placeholder="Write your message here..."></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+<div class="copyright">
+   <p> © Copyright Harjot Singh | All Rights Reserved.<br>
+    </p>
+</div>
+</div>
+
+
+</div>
+<script src="js/script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // Display the loader
+    document.querySelector('.loader').style.display = 'flex';
+
+    // Assume something is loading here, e.g., fetching data
+    // After loading is done, hide the loader
+    window.onload = function() {
+        document.querySelector('.loader').style.display = 'none';
+    };
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('.loader').style.display = 'flex';
+    window.onload = function() {
+        document.querySelector('.loader').style.display = 'none';
+    };
+});
+
+
+</script>
+
+<!-- form -->
+
+   
+   
+</body>
+</html>
